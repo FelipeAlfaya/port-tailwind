@@ -17,7 +17,7 @@
     cursor: pointer;
   }
 
-  .hamburguer {
+  .hamburger {
     cursor: pointer;
     width: 24px;
     height: 24px;
@@ -25,24 +25,25 @@
     position: relative;
   }
   
-  .hamburguer_top,
-  .hamburguer_middle,
-  .hamburguer_bottom {
+  .hamburger_top,
+  .hamburger_middle,
+  .hamburger_bottom {
     position: absolute;
     top: 0;
     left: 0;
-    width: 24px;
-    height: 2px;
+    width: 32px;
+    height: 3px;
     background: #000;
     transform: rotate(0);
     transition: all 0.5s;
   }
   
-  .hamburguer_middle {
+  .hamburger_middle {
     transform: translateY(7px);
+    transition: 0.3s;
   }
   
-  .hamburguer_bottom {
+  .hamburger_bottom {
     transform: translateY(14px);
   }
   
@@ -51,16 +52,23 @@
     transform: translatey(0);
   }
   
-  .open .hamburguer_top {
+  .open .hamburger_top {
     transform: rotate(45deg) translateY(6px) translate(6px);
   }
   
-  .open .hamburguer_middle {
-    display: none;
+  .open .hamburger_middle {
+    opacity: 0;
+    transition: 0.3s;
   }
   
-  .open .hamburguer_bottom {
+  .open .hamburger_bottom {
     transform: rotate(-45deg) translateY(6px) translate(-6px);
   }
 
-}
+  @media screen and (min-width: 768px) {
+    .hamburger {
+      display: none;
+    }
+  }
+    
+  }

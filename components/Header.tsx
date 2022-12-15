@@ -39,13 +39,11 @@ function Header() {
         >
           Get in touch
         </a>
-        <button
-          id='menu_btn'
-          className='hamburger md:hidden focus:outline-none flex flex-col justify-between'
-        >
-          <span id='hamburger_top' className='hamburguer_top'></span>
-          <span id='hamburger_middle' className='hamburguer_middle'></span>
-          <span id='hamburger_bottom' className='hamburguer_bottom'></span>
+
+        <button id='menu_btn' className='hamburger'>
+          <span id='hamburger_top' className='hamburger_top'></span>
+          <span id='hamburger_middle' className='hamburger_middle'></span>
+          <span id='hamburger_bottom' className='hamburger_bottom'></span>
         </button>
       </div>
 
