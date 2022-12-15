@@ -1,16 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,900;1,900&family=Zen+Dots&display=swap');
 
 @layer base {
   body {
     @apply bg-[#141414] text-white !scrollbar-thin !scrollbar-track-black/10 !scrollbar-thumb-gray-900;
+  }
+  body {
+    font-family: 'Inter', sans-serif;
   }
 }
 
 /* grid items-center justify-center space-y-2*/
 @layer components {
   
+  .headerLink {
+    display: inline-block;
+    margin: 0;
+  }
+  .headerLink:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px #019fb6;  
+    transform: scaleX(0);  
+    transition: transform 300ms ease-in-out;
+  }
+  .headerLink:hover:after { 
+    transform-origin:  0% 50%;
+    transform: scaleX(1);
+   }
+
   .titleid {
     display: grid;
     place-items: center;
@@ -90,4 +110,79 @@
     }
   }
     
+  }
+
+
+  @font-face {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    src: url('./fonts/Poppins-Light.ttf')
+  }
+  
+  @font-face {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/Poppins-Medium.ttf')
+  }
+  
+  @font-face {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    src: url('./fonts/Poppins-Regular.ttf')
+  }
+  
+  @font-face {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    src: url('./fonts/Poppins-Bold.ttf')
+  }
+
+  /* */
+  @font-face {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    src: url('./fonts/Inter-Light.ttf')
+  }
+  
+  @font-face {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/Inter-Medium.ttf')
+  }
+  
+  @font-face {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    src: url('./fonts/Inter-Regular.ttf')
+  }
+  
+  @font-face {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    src: url('./fonts/Inter-Bold.ttf')
+  }
+
+  
+    
+  @font-face {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    src: url('./fonts/Inter-ExtraBold.ttf')
+  }
+
+
+  @font-face {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    src: url('./fonts/Inter-Black.ttf')
   }

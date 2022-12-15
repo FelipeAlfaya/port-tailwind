@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 import Link from 'next/link'
 
@@ -17,7 +17,7 @@ function Header() {
   return (
     <nav className='relative container mx-auto p-6 bg-[#252525] rounded'>
       <div className='flex items-center justify-between'>
-        <div className='pt-2'>
+        <div className='pt-2 select-none'>
           <a>
             <Link href={'/'}>
               <img
@@ -29,21 +29,24 @@ function Header() {
           </a>
         </div>
 
-        <div className='hidden md:flex space-x-24 text-white md:space-x-12 select-none'>
-          <a className='hover:text-[#D9D9D9] text-2xl md:text-xl'>
+        <div
+          className=' hidden md:flex lg:space-x-24 text-[#D9D9D9] md:space-x-12 select-none font-extrabold
+         text-2xl md:text-xl'
+        >
+          <a className='headerLink hover:text-[#019fb6]'>
             <Link href={'/'}>Home</Link>
           </a>
-          <a className='hover:text-[#D9D9D9] text-2xl md:text-xl'>
+          <a className='headerLink hover:text-[#019fb6]'>
             <Link href={'/about'}>About me</Link>
           </a>
-          <a className='hover:text-[#D9D9D9] text-2xl md:text-xl'>
+          <a className='headerLink hover:text-[#019fb6]'>
             <Link href={'/projects'}>Projects</Link>
           </a>
         </div>
 
         <a
-          className='hidden md:block px-6 py-3 text-white text-xl bg-[#0C8370] 
-          rounded-full baseline hover:bg-[#7fffd4] hover:text-[#252525] select-none'
+          className='hidden md:block px-6 py-3 text-white text-xl bg-[#019fb6] 
+          rounded baseline hover:bg-[#19b7cf] active:bg-[#09cfee] hover:text-[#252525] select-none'
         >
           <Link href={'/contact'}>Get in touch</Link>
         </a>
@@ -60,18 +63,18 @@ function Header() {
           id='menu'
           className='absolute hidden flex-col items-center self-end
         py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto
-        sm:self-center left-6 right-6 drop-shadow-md pointer-events-none	'
+        sm:self-center left-6 right-6 drop-shadow-md uppercase rounded'
         >
-          <a className='hover:text-[#D9D9D9]'>
+          <a className='hover:text-[#019fb6]'>
             <Link href={'/'}>Home</Link>
           </a>
-          <a className='hover:text-[#D9D9D9]'>
+          <a className='hover:text-[#019fb6]'>
             <Link href={'/about'}>About me</Link>
           </a>
-          <a className='hover:text-[#D9D9D9]'>
+          <a className='hover:text-[#019fb6]'>
             <Link href={'/projects'}>Projects</Link>
           </a>
-          <a className='px-6 py-3 text-white bg-[#0C8370] rounded-full baseline hover:bg-[#7fffd4] hover:text-gray-700'>
+          <a className='px-6 py-3 text-white bg-[#019fb6] rounded baseline hover:bg-[#19b7cf] active:bg-[#09cfee] hover:text-gray-700'>
             Get in touch
           </a>
         </div>
