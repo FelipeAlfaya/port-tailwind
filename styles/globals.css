@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer base {
+
+  header {
+    @apply fixed top-0 z-50 flex w-full items-center justify-between px-4 py-4 transition-all lg:px-10 lg:py-6;
+  }
+}
+} */
+
+@layer components {
+
+  a {
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .hamburguer {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s;
+    position: relative;
+  }
+  
+  .hamburguer_top,
+  .hamburguer_middle,
+  .hamburguer_bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: #000;
+    transform: rotate(0);
+    transition: all 0.5s;
+  }
+  
+  .hamburguer_middle {
+    transform: translateY(7px);
+  }
+  
+  .hamburguer_bottom {
+    transform: translateY(14px);
+  }
+  
+  .open {
+    transform: rotate(90deg);
+    transform: translatey(0);
+  }
+  
+  .open .hamburguer_top {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+  }
+  
+  .open .hamburguer_middle {
+    display: none;
+  }
+  
+  .open .hamburguer_bottom {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+  }
+
+}
