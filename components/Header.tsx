@@ -19,25 +19,33 @@ function Header() {
       <div className='flex items-center justify-between'>
         <div className='pt-2'>
           <a>
-            <img
-              src='Alfaya.svg'
-              className='w-36 h-fit hover:drop-shadow-md'
-              alt='logo'
-            ></img>
+            <Link href={'/'}>
+              <img
+                src='Alfaya.svg'
+                className='w-36 h-fit hover:drop-shadow-md'
+                alt='logo'
+              ></img>
+            </Link>
           </a>
         </div>
 
-        <div className='hidden md:flex space-x-24 text-white md:space-x-12'>
-          <a className='hover:text-[#D9D9D9] text-2xl md:text-xl'>Home</a>
-          <a className='hover:text-[#D9D9D9] text-2xl md:text-xl'>About me</a>
-          <a className='hover:text-[#D9D9D9] text-2xl md:text-xl'>Projects</a>
+        <div className='hidden md:flex space-x-24 text-white md:space-x-12 select-none'>
+          <a className='hover:text-[#D9D9D9] text-2xl md:text-xl'>
+            <Link href={'/'}>Home</Link>
+          </a>
+          <a className='hover:text-[#D9D9D9] text-2xl md:text-xl'>
+            <Link href={'/about'}>About me</Link>
+          </a>
+          <a className='hover:text-[#D9D9D9] text-2xl md:text-xl'>
+            <Link href={'/projects'}>Projects</Link>
+          </a>
         </div>
 
         <a
           className='hidden md:block px-6 py-3 text-white text-xl bg-[#0C8370] 
-          rounded-full baseline hover:bg-[#7fffd4] hover:text-[#252525]'
+          rounded-full baseline hover:bg-[#7fffd4] hover:text-[#252525] select-none'
         >
-          Get in touch
+          <Link href={'/contact'}>Get in touch</Link>
         </a>
 
         <button id='menu_btn' className='hamburger'>
@@ -52,11 +60,17 @@ function Header() {
           id='menu'
           className='absolute hidden flex-col items-center self-end
         py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto
-        sm:self-center left-6 right-6 drop-shadow-md'
+        sm:self-center left-6 right-6 drop-shadow-md pointer-events-none	'
         >
-          <a className='hover:text-[#D9D9D9]'>Home</a>
-          <a className='hover:text-[#D9D9D9]'>About me</a>
-          <a className='hover:text-[#D9D9D9]'>Projects</a>
+          <a className='hover:text-[#D9D9D9]'>
+            <Link href={'/'}>Home</Link>
+          </a>
+          <a className='hover:text-[#D9D9D9]'>
+            <Link href={'/about'}>About me</Link>
+          </a>
+          <a className='hover:text-[#D9D9D9]'>
+            <Link href={'/projects'}>Projects</Link>
+          </a>
           <a className='px-6 py-3 text-white bg-[#0C8370] rounded-full baseline hover:bg-[#7fffd4] hover:text-gray-700'>
             Get in touch
           </a>

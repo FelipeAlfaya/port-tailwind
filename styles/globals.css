@@ -2,15 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base {
-
-  header {
-    @apply fixed top-0 z-50 flex w-full items-center justify-between px-4 py-4 transition-all lg:px-10 lg:py-6;
+@layer base {
+  body {
+    @apply bg-[#141414] text-white !scrollbar-thin !scrollbar-track-black/10 !scrollbar-thumb-gray-900;
   }
 }
-} */
 
+/* grid items-center justify-center space-y-2*/
 @layer components {
+  
+  .titleid {
+    display: grid;
+    place-items: center;
+    place-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "title";
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-rows: minmax(0, 1fr);
+    padding: 0px;
+    margin: 0px;
+  }
 
   a {
     transition: 0.3s;
@@ -18,11 +32,16 @@
   }
 
   .hamburger {
+    display: block;
     cursor: pointer;
     width: 24px;
     height: 24px;
     transition: all 0.3s;
     position: relative;
+  }
+
+  .hamburger:focus {
+    outline: none;
   }
   
   .hamburger_top,
@@ -33,7 +52,7 @@
     left: 0;
     width: 32px;
     height: 3px;
-    background: #000;
+    background: #464646;
     transform: rotate(0);
     transition: all 0.5s;
   }
