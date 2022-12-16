@@ -44,12 +44,14 @@ function Header() {
           </a>
         </div>
 
-        <a
-          className='hidden md:block px-6 py-3 text-white text-xl bg-[#019fb6] 
+        <Link legacyBehavior href={'/contact'}>
+          <a
+            className='hidden md:block px-6 py-3 text-white text-xl bg-[#019fb6] 
           rounded baseline hover:bg-[#19b7cf] active:bg-[#09cfee] hover:text-[#252525] select-none'
-        >
-          <Link href={'/contact'}>Get in touch</Link>
-        </a>
+          >
+            Get in touch
+          </a>
+        </Link>
 
         <button id='menu_btn' className='hamburger'>
           <span id='hamburger_top' className='hamburger_top'></span>
