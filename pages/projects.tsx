@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Header from '../components/Header'
+import Particle from '../components/Particle'
 
 function projects() {
   return (
@@ -8,6 +9,7 @@ function projects() {
         <title> Portfolio - projects</title>
       </Head>
       <Header />
+      <Particle />
       <div>projects works!</div>
     </div>
   )
