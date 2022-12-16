@@ -21,7 +21,7 @@ function Banner() {
           </span>
         </h1>
         <h2 className='flex flex-col items-center justify-center space-y-2 text-2xl'>
-          Web-developer
+          A Web-developer
         </h2>
       </div>
     </div>

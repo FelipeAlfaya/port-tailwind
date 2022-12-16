@@ -15,7 +15,7 @@ function Header() {
   }, [])
 
   return (
-    <nav className='relative container mx-auto p-6 bg-[#252525] rounded'>
+    <nav className='relative container mx-auto p-6 bg-[#252525] rounded z-50'>
       <div className='flex items-center justify-between'>
         <div className='pt-2 select-none'>
           <a>
@@ -61,17 +61,17 @@ function Header() {
       <div className='md:hidden'>
         <div
           id='menu'
-          className='absolute hidden flex-col items-center self-end
+          className='absolute hidden text-[#252525] flex-col items-center self-end
         py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto
-        sm:self-center left-6 right-6 drop-shadow-md uppercase rounded'
+        sm:self-center left-6 right-6 drop-shadow-md uppercase rounded z-50'
         >
-          <a className='hover:text-[#019fb6]'>
+          <a className='headerLink hover:text-[#019fb6]'>
             <Link href={'/'}>Home</Link>
           </a>
-          <a className='hover:text-[#019fb6]'>
+          <a className='headerLink hover:text-[#019fb6]'>
             <Link href={'/about'}>About me</Link>
           </a>
-          <a className='hover:text-[#019fb6]'>
+          <a className='headerLink hover:text-[#019fb6]'>
             <Link href={'/projects'}>Projects</Link>
           </a>
           <a className='px-6 py-3 text-white bg-[#019fb6] rounded baseline hover:bg-[#19b7cf] active:bg-[#09cfee] hover:text-gray-700'>
