@@ -47,7 +47,7 @@ function Header() {
         <Link legacyBehavior href={'/contact'}>
           <a
             className='hidden md:block px-6 py-3 text-white text-xl bg-[#019fb6] 
-          rounded baseline hover:bg-[#19b7cf] active:bg-[#09cfee] hover:text-[#252525] select-none'
+          rounded baseline hover:bg-[#19b7cf] active:bg-[#09cfee] hover:text-[#252525] select-none duration-300'
           >
             Get in touch
           </a>
@@ -76,8 +76,9 @@ function Header() {
           <a className='headerLink hover:text-[#019fb6]'>
             <Link href={'/projects'}>Projects</Link>
           </a>
-          <a className='px-6 py-3 text-white bg-[#019fb6] rounded baseline hover:bg-[#19b7cf] active:bg-[#09cfee] hover:text-gray-700'>
-            Get in touch
+
+          <a className='px-6 py-3 text-white bg-[#019fb6] rounded baseline hover:bg-[#19b7cf] active:bg-[#09cfee] hover:text-gray-700 select-none'>
+            <Link href={'/contact'}>Get in touch</Link>
           </a>
         </div>
       </div>
