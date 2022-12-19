@@ -6,7 +6,7 @@ function projects() {
   return (
     <div>
       <Head>
-        <title> Portfolio - projects</title>
+        <title> Portfolio - Projects</title>
       </Head>
       <Header />
       <Particle />
