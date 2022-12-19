@@ -7,6 +7,7 @@ function projects() {
     <div>
       <Head>
         <title> Portfolio - Projects</title>
+        <link rel='icon' href='/pageicon.png' />
       </Head>
       <Header />
       <Particle />

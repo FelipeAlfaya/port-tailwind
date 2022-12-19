@@ -14,11 +14,72 @@
 
 /* grid items-center justify-center space-y-2*/
 @layer components {
-  
+
+  .angular:hover {
+    color: #DD0031;
+  }
+  .typescript:hover {
+    color: #0E76A8;
+  }
+
+  .javascript:hover {
+    color: #F7DF1E;
+  }
+
+  .react:hover {
+    color: #61DAFB;
+  }
+
+  .nextjs:hover {
+    color: #5660eb;
+  }
+
+  .nodejs:hover {
+    color: #339933;
+  }
+
+  .expressjs:hover {
+    color: #950dd4;
+  }
+
+  .mongodb:hover {
+    color: #47A248;
+  }
+
+  .postgresql:hover {
+    color: #336791;
+  }
+
+  .python:hover {
+    color: #3776AB;
+  }
+
+  .csharp:hover {
+    color: #2e682f;
+  }
+
+  .angular,
+  .csharp,
+  .expressjs,
+  .javascript,
+  .mongodb,
+  .nodejs,
+  .nextjs,
+  .postgresql,
+  .python,
+  .react,
+  .typescript {
+    transition: 0.3s;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0;
+  }
+
   .headerLink {
     display: inline-block;
     margin: 0;
   }
+
   .headerLink:after {
     display:block;
     content: '';
@@ -26,6 +87,7 @@
     transform: scaleX(0);  
     transition: transform 300ms ease-in-out;
   }
+  
   .headerLink:hover:after { 
     transform-origin:  0% 50%;
     transform: scaleX(1);

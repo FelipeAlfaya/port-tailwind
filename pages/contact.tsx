@@ -7,6 +7,7 @@ function contact() {
     <div>
       <Head>
         <title> Portfolio - Contact</title>
+        <link rel='icon' href='/pageicon.png' />
       </Head>
       <Header />
       <Particle />
