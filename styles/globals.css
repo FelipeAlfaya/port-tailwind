@@ -15,6 +15,17 @@
 /* grid items-center justify-center space-y-2*/
 @layer components {
 
+  .downloadButton {
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    border-radius: 6px;
+    display: inline-block;
+    margin: 0;
+    text-transform: uppercase;
+    box-shadow: 0 8px 32px 0 rgba( 1, 159, 182, 0.37 );
+  }
+
+
   .angular:hover {
     color: #DD0031;
   }
@@ -87,7 +98,7 @@
     transform: scaleX(0);  
     transition: transform 300ms ease-in-out;
   }
-  
+
   .headerLink:hover:after { 
     transform-origin:  0% 50%;
     transform: scaleX(1);

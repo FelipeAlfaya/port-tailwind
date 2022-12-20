@@ -16,7 +16,7 @@ function about() {
         <h1 className='text-4xl font-bold text-center text-white md:text-5xl lg:text-6xl z-50'>
           About me
         </h1>
-        <div className='flex flex-col items-center justify-center space-y-2 text-2xl z-50 bg-gray-600/60'>
+        <div className='flex flex-col items-center justify-center space-y-2 text-2xl z-50'>
           <p className='text-center text-white text-xl z-50 w-3/6'>
             I am a Web-Developer with a passion for creating beautiful and
             functional websites. I have a strong background in web development
@@ -33,6 +33,9 @@ function about() {
             <span className='csharp'>C#</span>. I am always looking for new
             opportunities to learn and grow.
           </p>
+          <a className='downloadButton bg-transparent hover:bg-[#019fb6] text-[#019fb6] font-semibold hover:text-white py-2 px-4 border border-[#019fb6] hover:border-transparent active:bg-[#55e8ff] rounded select-none'>
+            Download CV
+          </a>
         </div>
       </div>
     </div>
