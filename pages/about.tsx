@@ -34,7 +34,7 @@ function about() {
             opportunities to learn and grow.
           </p>
           <a className='downloadButton bg-transparent hover:bg-[#019fb6] text-[#019fb6] font-semibold hover:text-white py-2 px-4 border border-[#019fb6] hover:border-transparent active:bg-[#55e8ff] rounded select-none'>
-            Download CV
+            <Link href={'/contact'}>Get in touch</Link>
           </a>
         </div>
       </div>

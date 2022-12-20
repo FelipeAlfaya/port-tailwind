@@ -49,7 +49,7 @@ function Header() {
             className='hidden md:block px-6 py-3 text-white text-xl bg-[#019fb6] 
           rounded baseline hover:bg-[#19b7cf] active:bg-[#09cfee] hover:text-[#252525] select-none duration-300'
           > */}
-          <a className='bg-transparent hover:bg-[#019fb6] text-[#019fb6] font-semibold hover:text-white py-2 px-4 border border-[#019fb6] hover:border-transparent active:bg-[#55e8ff] rounded select-none'>
+          <a className='hidden md:block bg-transparent hover:bg-[#019fb6] text-[#019fb6] font-semibold hover:text-white py-2 px-4 border border-[#019fb6] hover:border-transparent active:bg-[#55e8ff] rounded select-none'>
             Get in touch
           </a>
         </Link>
