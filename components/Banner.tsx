@@ -9,8 +9,6 @@ function Banner() {
           src='/background.png'
           layout='fill'
           objectFit='cover'
-          width={100}
-          height={100}
         />
       </div>
       <div className='flex flex-col items-center justify-center space-y-2'>
