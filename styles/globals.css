@@ -23,7 +23,6 @@
   }
 }
 
-/* grid items-center justify-center space-y-2*/
 @layer components {
 
 
@@ -138,6 +137,11 @@
     grid-auto-rows: minmax(0, 1fr);
     padding: 0px;
     margin: 0px;
+  }
+
+  button {
+    transition: 0.3s;
+    cursor: pointer;
   }
 
   a {
