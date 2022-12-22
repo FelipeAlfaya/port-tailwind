@@ -15,7 +15,7 @@ function Header() {
   }, [])
 
   return (
-    <nav className='relative container mx-auto p-6 bg-[#252525] rounded z-50'>
+    <nav className='relative container mx-auto p-6 bg-[#252525]/80 rounded border-b border-[#019fb6]/80 z-50'>
       <div className='flex items-center justify-between'>
         <div className='pt-2 select-none'>
           <a>
@@ -45,10 +45,6 @@ function Header() {
         </div>
 
         <Link legacyBehavior href={'/contact'}>
-          {/* <a
-            className='hidden md:block px-6 py-3 text-white text-xl bg-[#019fb6] 
-          rounded baseline hover:bg-[#19b7cf] active:bg-[#09cfee] hover:text-[#252525] select-none duration-300'
-          > */}
           <a className='hidden md:block bg-transparent hover:bg-[#019fb6] text-[#019fb6] font-semibold hover:text-white py-2 px-4 border border-[#019fb6] hover:border-transparent active:bg-[#55e8ff] rounded select-none'>
             Get in touch
           </a>
