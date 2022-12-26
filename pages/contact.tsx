@@ -15,7 +15,7 @@ function contact() {
     event.preventDefault()
     console.log(nome, email, content)
     if (nome === '' || email === '' || content === '') {
-      alert('Please fill all the fields.')
+      toast('Please fill all the fields.')
       return
     }
     try {
@@ -23,9 +23,9 @@ function contact() {
       setNome('')
       setEmail('')
       setContent('')
-      alert('Email sent successfully')
+      toast.success('Email sent successfully')
     } catch {
-      alert('Something went wrong, please try again later')
+      toast.error('Something went wrong, please try again later')
     }
   }
 
@@ -37,6 +37,7 @@ function contact() {
       </Head>
       <Header />
       <Particle />
+      <Toaster />
       <div>
         <h1 className='text-6xl p-2.5 m-2.5 bg-transparent font-bold text-center md:text-4xl lg:text-6xl z-50'>
           Need my <span className='glow text-[#019fb6]/70 '>services</span>?
