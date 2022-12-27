@@ -8,20 +8,20 @@ import 'react-toastify/dist/ReactToastify.css'
 
 function contact() {
   const [nome, setNome] = useState('')
-  const [email, setEmail] = useState('')
+  const [senderMail, setSenderMail] = useState('')
   const [content, setContent] = useState('')
 
   async function handleSubmit(event: any) {
     event.preventDefault()
-    console.log(nome, email, content)
-    if (nome === '' || email === '' || content === '') {
+    console.log(nome, senderMail, content)
+    if (nome === '' || senderMail === '' || content === '') {
       toast('Please fill all the fields.')
       return
     }
     try {
-      await sendContactEmail(nome, email, content)
+      await sendContactEmail(nome, senderMail, content)
       setNome('')
-      setEmail('')
+      setSenderMail('')
       setContent('')
       toast.success('Email sent successfully')
     } catch {
@@ -63,10 +63,10 @@ function contact() {
           ></input>
 
           <input
-            value={email}
+            value={senderMail}
             type='email'
             placeholder='E-mail'
-            onChange={({ target }) => setEmail(target.value)}
+            onChange={({ target }) => setSenderMail(target.value)}
             className='p-2.5 m-2.5 bg-transparent border border-[#019fb6]'
           ></input>
 

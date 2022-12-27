@@ -13,14 +13,13 @@ const transporter = nodemailer.createTransport({
 })
 
 const mailer = ({ senderMail, nome, text }) => {
-  const from =
-    nome && senderMail ? `${nome} <${senderMail}>` : `${nome || senderMail}`
   const message = {
-    from,
+    from: `${email}`,
     to: `${email}`,
     subject: `Message from ${nome}`,
-    text,
-    replyTo: from,
+    html: `<p>From: ${senderMail}</p>
+    <p>A new client want to contact you: </br>
+    Message: ${text}</p>`,
   }
 
   return new Promise((resolve, reject) => {
